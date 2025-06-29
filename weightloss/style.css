@@ -1,0 +1,265 @@
+/*
+Theme Name: WeightLoss
+Theme URI: https://templatejungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: WeightLoss – WeightLoss Landing Page Bootstrap 5 HTML Website Template
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+    
+/*--------------------------------------------------------------
+/** VARIABLES
+--------------------------------------------------------------*/
+:root {
+         font-family: "Montserrat", sans-serif;
+         --body-font: "Montserrat", sans-serif;
+         --bs-btn-font-family: "Montserrat", sans-serif;
+}
+:root {
+        --bs-primary: #2E8B57;
+        --bs-primary-rgb: 46, 139, 87;
+        --bs-secondary: #20B2AA;
+        --bs-secondary-rgb: 32, 178, 170;
+        --bs-info-rgb: 13, 202, 240;
+        --body-color: #4A5568;
+        --bs-heading-color: #2D3748;
+        --bs-secondary-bg: #F7FAFC;
+        --bs-secondary-bg-rgb: 247, 250, 252;
+        --bs-primary-bg-subtle: #E6FFFA;
+        --bs-link-color: var(--bs-heading-color);
+        --bs-link-color-rgb: var(--bs-heading-color);
+        --bs-link-hover-color: var(--bs-primary);
+        --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+        --swiper-theme-color: var(--bs-primary) !important;
+        --swiper-pagination-color: var(--bs-primary) !important;
+        --accent-color: #FF6B35;
+        --accent-color-rgb: 255, 107, 53;
+        --success-color: #48BB78;
+        --success-color-rgb: 72, 187, 120;
+        --gradient-primary: linear-gradient(135deg, #2E8B57 0%, #20B2AA 100%);
+        --gradient-accent: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+}
+
+body {
+   font-family: var(--body-font);
+   font-weight: 400;
+   font-size: 16px;
+   color: var(--body-color);
+   line-height: 1.6;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+   text-transform: capitalize;
+   color: var(--bs-heading-color);
+}
+
+h1 {
+   font-size: 51px;
+   font-weight: 700;
+   font-family: var(--body-font);
+   background: var(--gradient-primary);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+
+h2 {
+   font-size: 39px;
+   font-weight: 600;
+   font-family: var(--body-font);
+   color: var(--bs-heading-color);
+}
+
+h3 {
+   font-size: 22px;
+   font-weight: 500;
+   font-family: var(--body-font);
+   color: var(--bs-heading-color);
+}
+
+h4 {
+   font-size: 21px;
+   font-weight: 600;
+   font-family: var(--body-font);
+   color: var(--bs-heading-color);
+}
+
+h5 {
+   font-size: 18px;
+   font-weight: 500;
+   font-family: var(--body-font);
+   color: var(--bs-heading-color);
+}
+
+h6 {
+   font-size: 16px;
+   font-weight: 500;
+   font-family: var(--body-font);
+   color: var(--bs-heading-color);
+}
+
+.btn-primary {
+   font-family: var(--bs-btn-font-family);
+   --bs-btn-color: #fff;
+   --bs-btn-bg: var(--bs-primary);
+   --bs-btn-border-color: var(--bs-primary);
+   --bs-btn-hover-color: #fff;
+   --bs-btn-hover-bg: var(--accent-color);
+   --bs-btn-hover-border-color: var(--accent-color);
+   --bs-btn-focus-shadow-rgb: 49, 132, 253;
+   --bs-btn-active-color: #fff;
+   --bs-btn-active-bg: var(--accent-color);
+   --bs-btn-active-border-color: var(--accent-color);
+   text-transform: capitalize;
+   border-radius: 50px;
+   padding: 12px 30px;
+   font-weight: 600;
+   transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+   transform: translateY(-2px);
+}
+
+.btn-group-lg>.btn, .btn-lg {
+   --bs-btn-padding-y: 0.9rem;
+   --bs-btn-padding-x: 2rem;
+}
+
+/* section padding and margin */
+.section-padding{
+   padding-top: 160px;
+   padding-bottom: 160px;
+}
+.section-margin{
+   margin-top: 160px;
+   margin-bottom: 160px;
+}
+
+.navbar {
+   --bs-navbar-active-color: var(--bs-primary);
+   backdrop-filter: blur(10px);
+   background-color: rgba(255, 255, 255, 0.95) !important;
+}
+.nav-link {
+   letter-spacing: 1px;
+   font-weight: 500;
+   transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+   color: var(--bs-primary) !important;
+}
+
+.swiper-pagination-bullet{
+   background-color: var(--bs-gray-300);
+   opacity: 1;
+   width: 17px;
+   height: 17px;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+   background-color: var(--swiper-pagination-color);
+}
+
+.site-header {
+   position: fixed;
+   top: 0;
+   background-color: transparent;
+   width: 100%;
+   z-index: 999999;
+   transition: all 0.3s ease;
+}
+.site-header.sticky{
+   background-color: rgba(255, 255, 255, 0.98);
+   backdrop-filter: blur(10px);
+}
+
+/* Enhanced styling for sections */
+.bg-primary-subtle {
+   background: linear-gradient(135deg, #E6FFFA 0%, #F0FFF4 100%) !important;
+}
+
+.bg-body-secondary {
+   background: linear-gradient(135deg, #F7FAFC 0%, #EDF2F7 100%) !important;
+}
+
+/* Enhanced card styling */
+.testimonial-card {
+   background: white;
+   border: none !important;
+   transition: all 0.3s ease;
+   border-radius: 20px !important;
+}
+
+.testimonial-card:hover {
+   transform: translateY(-5px);
+}
+
+/* Enhanced icon styling */
+.icon svg {
+   color: var(--success-color);
+}
+
+/* Enhanced product pricing */
+.text-primary {
+   color: var(--bs-primary) !important;
+   font-weight: 700;
+}
+
+/* Enhanced star ratings */
+.review-icon .star {
+   color: #FFD700 !important;
+}
+
+/* Enhanced navbar brand */
+.navbar-brand img {
+   transition: all 0.3s ease;
+}
+
+/* Enhanced images */
+.img-fluid {
+   border-radius: 15px;
+   transition: all 0.3s ease;
+}
+
+.img-fluid:hover {
+   transform: scale(1.02);
+}
+
+/* Enhanced buttons */
+.btn-color {
+   background: var(--gradient-primary) !important;
+   border: none !important;
+}
+
+.btn-color:hover {
+   background: var(--gradient-accent) !important;
+}
+
+/* Enhanced section backgrounds */
+#why-choose-us {
+   background: linear-gradient(135deg, #F0FFF4 0%, #E6FFFA 100%);
+}
+
+/* Enhanced pricing cards */
+#product .col-md-4 {
+   transition: all 0.3s ease;
+}
+
+#product .col-md-4:hover {
+   transform: translateY(-10px);
+}
+
+/* Enhanced features section */
+#features {
+   background: linear-gradient(135deg, #F7FAFC 0%, #EDF2F7 100%);
+}
+
+/* Enhanced about section */
+#about {
+   background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+}
